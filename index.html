@@ -29,12 +29,30 @@
       </div>
       <div id="trophyGrid" class="trophy-grid" role="list"></div>
     </section>
+<section class="leader">
+  <h2>Trophy Leaderboard</h2>
+  <div class="small">Counts include 1st, 2nd, and 3rd place finishes.</div>
 
-    <section class="hall">
-      <h2>Hall of Champions</h2>
-      <ul id="championList" class="champion-list"></ul>
-    </section>
-  </main>
+  <div class="toolbar" style="margin-top:8px;">
+    <input id="lbSearch" class="input" placeholder="Filter by name…" />
+  </div>
+
+  <div class="table-wrap">
+    <table class="table" id="leaderTable" aria-label="Trophy counts by person">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>1st</th>
+          <th>2nd</th>
+          <th>3rd</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="leaderBody"></tbody>
+    </table>
+  </div>
+</section>
+
 
   <!-- Modal -->
   <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
