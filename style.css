@@ -134,4 +134,24 @@ html {
 @media (prefers-color-scheme: light) {
   html { --football-brown: #8a4a24; }
 }
+/* --- Explicit theme switch (JS sets html[data-theme="..."]) --- */
+html[data-theme="dark"] {
+  --bg: #0f1115;
+  --fg: #e8e8ea;
+  --muted: #a7acb9;
+  --card: #171922;
+  --accent: #ffd76a;
+  --ring: #2a2f45;
+  --border: #1f2335;
+}
+
+html[data-theme="light"] {
+  --bg: #f9fafb;
+  --fg: #101216;
+  --muted: #505469;
+  --card: #ffffff;
+  --accent: #c88700;
+  --ring: #dfe3f1;
+  --border: #e8eaf5;
+}
 
