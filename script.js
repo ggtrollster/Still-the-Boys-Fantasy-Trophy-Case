@@ -98,6 +98,59 @@
   }
 
   // Modal
+  function getCountsFromSeasons(seasons) {
+  const counts = {};
+  seasons.forEach(s => {
+    const podium = (Array.isArray(s.top3) && s.top3.length)
+      ? s.top3
+      : (s.champion ? [{ place: 1, name: s.champion }] : []);
+
+    podium.forEach(p => {
+      const name = (p.name || "").trim();
+      if (!name) return;
+      if (!counts[name]) counts[name] = { first: 0, second: 0, third: 0, total: 0 };
+      if (p.place === 1) counts[name].first++;
+      else if (p.place === 2) counts[name].second++;
+      else if (p.place === 3) counts[name].third++;
+    });
+  });
+  Object.values(counts).forEach(c => { c.total = c.first + c.second + c.third; });
+  return counts;
+}
+
+function renderLeaderboard(seasons) {
+  const body = document.getElementById("leaderBody");
+  if (!body) return;
+
+  const search = document.getElementById("lbSearch");
+  const q = (search?.value || "").toLowerCase();
+
+  const counts = getCountsFromSeasons(seasons);
+  const rows = Object.entries(counts).map(([name, c]) => ({ name, ...c }));
+
+  rows.sort((a, b) =>
+    b.first - a.first ||
+    b.second - a.second ||
+    b.third - a.third ||
+    a.name.localeCompare(b.name)
+  );
+
+  body.innerHTML = "";
+  rows
+    .filter(r => r.name.toLowerCase().includes(q))
+    .forEach(r => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${r.name}</td>
+        <td>${r.first}</td>
+        <td>${r.second}</td>
+        <td>${r.third}</td>
+        <td>${r.total}</td>
+      `;
+      body.appendChild(tr);
+    });
+}
+
   const modal = document.getElementById("modal");
   const backdrop = modal.querySelector(".modal-backdrop");
   const closeBtns = modal.querySelectorAll("[data-close]");
@@ -140,8 +193,10 @@
   // Wire filters
   sortSelect.addEventListener("change", () => { renderGrid(); });
   searchInput.addEventListener("input", () => { renderGrid(); });
+document.getElementById("lbSearch")?.addEventListener("input", () => renderLeaderboard(seasons));
 
   // Initial render
   renderGrid();
-  renderHall();
+  renderLeaderboard(seasons);
+
 })();
