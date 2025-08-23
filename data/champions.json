@@ -1,0 +1,72 @@
+{
+  "league": "Your League Name",
+  "seasons": [
+    {
+      "year": 2024,
+      "champion": "Aiden McCaffrey",
+      "team": "CMC Hammer",
+      "note": "12\u20132, points leader",
+      "top3": [
+        {
+          "place": 1,
+          "name": "Aiden McCaffrey",
+          "team": "CMC Hammer"
+        },
+        {
+          "place": 2,
+          "name": "Rhea Jacobs",
+          "team": "Hurts So Good"
+        },
+        {
+          "place": 3,
+          "name": "Luis Ortega",
+          "team": "GenoSide"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "champion": "Rhea Jacobs",
+      "team": "Hurts So Good",
+      "top3": [
+        {
+          "place": 1,
+          "name": "Rhea Jacobs",
+          "team": "Hurts So Good"
+        },
+        {
+          "place": 2,
+          "name": "Luis Ortega",
+          "team": "GenoSide"
+        },
+        {
+          "place": 3,
+          "name": "Aiden McCaffrey",
+          "team": "CMC Hammer"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "champion": "Luis Ortega",
+      "team": "GenoSide",
+      "top3": [
+        {
+          "place": 1,
+          "name": "Luis Ortega",
+          "team": "GenoSide"
+        },
+        {
+          "place": 2,
+          "name": "Rhea Jacobs",
+          "team": "Hurts So Good"
+        },
+        {
+          "place": 3,
+          "name": "Priya Shah",
+          "team": "Kittle Corn"
+        }
+      ]
+    }
+  ]
+}
