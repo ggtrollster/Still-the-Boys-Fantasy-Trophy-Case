@@ -102,4 +102,36 @@ h1 { margin: 12px 0 2px; font-size: 28px; }
 .table th { font-weight: 700; }
 .table tr:hover td { background: rgba(255,255,255,0.03); }
 .leader .small { color: var(--muted); margin-top: 2px; }
+/* Let the html background show through */
+body { background: transparent; }
+
+/* --- Football leather background (pure CSS) --- */
+html {
+  --football-brown: #6b3e1f;
+  --pebble-size: 8px;
+  --pebble-highlight: rgba(255,255,255,0.10);
+  --pebble-shadow: rgba(0,0,0,0.24);
+
+  background-color: var(--football-brown);
+  background-image:
+    radial-gradient(circle at 1px 1px,
+      var(--pebble-highlight) 0 1px,
+      var(--pebble-shadow) 1px 2px,
+      transparent 2px),
+    radial-gradient(circle at 5px 5px,
+      var(--pebble-highlight) 0 1px,
+      var(--pebble-shadow) 1px 2px,
+      transparent 2px),
+    linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.35));
+  background-size:
+    var(--pebble-size) var(--pebble-size),
+    var(--pebble-size) var(--pebble-size),
+    100% 100%;
+  background-attachment: fixed;
+}
+
+/* Optional: tweak for light mode */
+@media (prefers-color-scheme: light) {
+  html { --football-brown: #8a4a24; }
+}
 
