@@ -5,117 +5,117 @@
       "year": 2024,
       "champion": "Shabaz",
       "top3": [
-        {"place": 1, "name": "Shabaz"},
-        {"place": 2, "name": "Flo"},
-        {"place": 3, "name": "Jwoo"}
+        { "place": 1, "name": "Shabaz" },
+        { "place": 2, "name": "Flo" },
+        { "place": 3, "name": "Jwoo" }
       ]
     },
     {
       "year": 2023,
       "champion": "Shabaz",
       "top3": [
-        {"place": 1, "name": "Shabaz"},
-        {"place": 2, "name": "Flo"},
-        {"place": 3, "name": "Josh"}
+        { "place": 1, "name": "Shabaz" },
+        { "place": 2, "name": "Flo" },
+        { "place": 3, "name": "Josh" }
       ]
     },
     {
       "year": 2022,
       "champion": "Jordan",
       "top3": [
-        {"place": 1, "name": "Jordan"},
-        {"place": 2, "name": "Justin"},
-        {"place": 3, "name": "Billy"}
+        { "place": 1, "name": "Jordan" },
+        { "place": 2, "name": "Justin" },
+        { "place": 3, "name": "Billy" }
       ]
     },
     {
       "year": 2021,
       "champion": "Billy",
       "top3": [
-        {"place": 1, "name": "Billy"},
-        {"place": 2, "name": "Ajay"},
-        {"place": 3, "name": "Jwoo"}
+        { "place": 1, "name": "Billy" },
+        { "place": 2, "name": "Ajay" },
+        { "place": 3, "name": "Jwoo" }
       ]
     },
     {
       "year": 2020,
       "champion": "Jwoo",
       "top3": [
-        {"place": 1, "name": "Jwoo"},
-        {"place": 2, "name": "Jpak"},
-        {"place": 3, "name": "Ajay"}
+        { "place": 1, "name": "Jwoo" },
+        { "place": 2, "name": "Jpak" },
+        { "place": 3, "name": "Ajay" }
       ]
     },
     {
       "year": 2019,
       "champion": "Jordan",
       "top3": [
-        {"place": 1, "name": "Jordan"},
-        {"place": 2, "name": "Matt"},
-        {"place": 3, "name": "Billy"}
+        { "place": 1, "name": "Jordan" },
+        { "place": 2, "name": "Matt" },
+        { "place": 3, "name": "Billy" }
       ]
     },
     {
       "year": 2018,
       "champion": "Billy",
       "top3": [
-        {"place": 1, "name": "Billy"},
-        {"place": 2, "name": "Mike"},
-        {"place": 3, "name": "Justin"}
+        { "place": 1, "name": "Billy" },
+        { "place": 2, "name": "Mike" },
+        { "place": 3, "name": "Justin" }
       ]
     },
     {
       "year": 2017,
       "champion": "Jordan",
       "top3": [
-        {"place": 1, "name": "Jordan"},
-        {"place": 2, "name": "Matt"},
-        {"place": 3, "name": "Jwoo"}
+        { "place": 1, "name": "Jordan" },
+        { "place": 2, "name": "Matt" },
+        { "place": 3, "name": "Jwoo" }
       ]
     },
     {
       "year": 2016,
       "champion": "Flo",
       "top3": [
-        {"place": 1, "name": "Flo"},
-        {"place": 2, "name": "Mike"},
-        {"place": 3, "name": "Billy"}
+        { "place": 1, "name": "Flo" },
+        { "place": 2, "name": "Mike" },
+        { "place": 3, "name": "Billy" }
       ]
     },
     {
       "year": 2015,
       "champion": "Mike",
       "top3": [
-        {"place": 1, "name": "Mike"},
-        {"place": 2, "name": "Flo"},
-        {"place": 3, "name": "Jwoo"}
+        { "place": 1, "name": "Mike" },
+        { "place": 2, "name": "Flo" },
+        { "place": 3, "name": "Jwoo" }
       ]
     },
     {
       "year": 2014,
       "champion": "Jordan",
       "top3": [
-        {"place": 1, "name": "Jordan"},
-        {"place": 2, "name": "Mike"},
-        {"place": 3, "name": "Jwoo"}
+        { "place": 1, "name": "Jordan" },
+        { "place": 2, "name": "Mike" },
+        { "place": 3, "name": "Jwoo" }
       ]
     },
     {
       "year": 2013,
       "champion": "Mike",
       "top3": [
-        {"place": 1, "name": "Mike"},
-        {"place": 2, "name": "Justin"},
-        {"place": 3, "name": "Flo"}
+        { "place": 1, "name": "Mike" },
+        { "place": 2, "name": "Justin" },
+        { "place": 3, "name": "Flo" }
       ]
     },
     {
       "year": 2012,
       "champion": "Jwoo",
       "top3": [
-        {"place": 1, "name": "Jwoo"},
-        {"place": 2, "name": "Billy"},
-        {"place": 3, "name": "Ajay"}
+        { "place": 1, "name": "Jwoo" },
+        { "place": 2, "name": "Billy" },
+        { "place": 3, "name": "Ajay" }
       ]
     }
   ]
