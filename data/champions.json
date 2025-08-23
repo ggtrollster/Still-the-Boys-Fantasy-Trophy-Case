@@ -1,71 +1,121 @@
 {
-  "league": "Your League Name",
+  "league": "Still the Boys Fantasy Trophy Case",
   "seasons": [
     {
       "year": 2024,
-      "champion": "Aiden McCaffrey",
-      "team": "CMC Hammer",
-      "note": "12\u20132, points leader",
+      "champion": "Shabaz",
       "top3": [
-        {
-          "place": 1,
-          "name": "Aiden McCaffrey",
-          "team": "CMC Hammer"
-        },
-        {
-          "place": 2,
-          "name": "Rhea Jacobs",
-          "team": "Hurts So Good"
-        },
-        {
-          "place": 3,
-          "name": "Luis Ortega",
-          "team": "GenoSide"
-        }
+        {"place": 1, "name": "Shabaz"},
+        {"place": 2, "name": "Flo"},
+        {"place": 3, "name": "Jwoo"}
       ]
     },
     {
       "year": 2023,
-      "champion": "Rhea Jacobs",
-      "team": "Hurts So Good",
+      "champion": "Shabaz",
       "top3": [
-        {
-          "place": 1,
-          "name": "Rhea Jacobs",
-          "team": "Hurts So Good"
-        },
-        {
-          "place": 2,
-          "name": "Luis Ortega",
-          "team": "GenoSide"
-        },
-        {
-          "place": 3,
-          "name": "Aiden McCaffrey",
-          "team": "CMC Hammer"
-        }
+        {"place": 1, "name": "Shabaz"},
+        {"place": 2, "name": "Flo"},
+        {"place": 3, "name": "Josh"}
       ]
     },
     {
       "year": 2022,
-      "champion": "Luis Ortega",
-      "team": "GenoSide",
+      "champion": "Jordan",
       "top3": [
-        {
-          "place": 1,
-          "name": "Luis Ortega",
-          "team": "GenoSide"
-        },
-        {
-          "place": 2,
-          "name": "Rhea Jacobs",
-          "team": "Hurts So Good"
-        },
-        {
-          "place": 3,
-          "name": "Priya Shah",
-          "team": "Kittle Corn"
-        }
+        {"place": 1, "name": "Jordan"},
+        {"place": 2, "name": "Justin"},
+        {"place": 3, "name": "Billy"}
+      ]
+    },
+    {
+      "year": 2021,
+      "champion": "Billy",
+      "top3": [
+        {"place": 1, "name": "Billy"},
+        {"place": 2, "name": "Ajay"},
+        {"place": 3, "name": "Jwoo"}
+      ]
+    },
+    {
+      "year": 2020,
+      "champion": "Jwoo",
+      "top3": [
+        {"place": 1, "name": "Jwoo"},
+        {"place": 2, "name": "Jpak"},
+        {"place": 3, "name": "Ajay"}
+      ]
+    },
+    {
+      "year": 2019,
+      "champion": "Jordan",
+      "top3": [
+        {"place": 1, "name": "Jordan"},
+        {"place": 2, "name": "Matt"},
+        {"place": 3, "name": "Billy"}
+      ]
+    },
+    {
+      "year": 2018,
+      "champion": "Billy",
+      "top3": [
+        {"place": 1, "name": "Billy"},
+        {"place": 2, "name": "Mike"},
+        {"place": 3, "name": "Justin"}
+      ]
+    },
+    {
+      "year": 2017,
+      "champion": "Jordan",
+      "top3": [
+        {"place": 1, "name": "Jordan"},
+        {"place": 2, "name": "Matt"},
+        {"place": 3, "name": "Jwoo"}
+      ]
+    },
+    {
+      "year": 2016,
+      "champion": "Flo",
+      "top3": [
+        {"place": 1, "name": "Flo"},
+        {"place": 2, "name": "Mike"},
+        {"place": 3, "name": "Billy"}
+      ]
+    },
+    {
+      "year": 2015,
+      "champion": "Mike",
+      "top3": [
+        {"place": 1, "name": "Mike"},
+        {"place": 2, "name": "Flo"},
+        {"place": 3, "name": "Jwoo"}
+      ]
+    },
+    {
+      "year": 2014,
+      "champion": "Jordan",
+      "top3": [
+        {"place": 1, "name": "Jordan"},
+        {"place": 2, "name": "Mike"},
+        {"place": 3, "name": "Jwoo"}
+      ]
+    },
+    {
+      "year": 2013,
+      "champion": "Mike",
+      "top3": [
+        {"place": 1, "name": "Mike"},
+        {"place": 2, "name": "Justin"},
+        {"place": 3, "name": "Flo"}
+      ]
+    },
+    {
+      "year": 2012,
+      "champion": "Jwoo",
+      "top3": [
+        {"place": 1, "name": "Jwoo"},
+        {"place": 2, "name": "Billy"},
+        {"place": 3, "name": "Ajay"}
       ]
     }
   ]
