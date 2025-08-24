@@ -157,6 +157,29 @@
     filtered.sort((a,b) => sortSelect?.value === "asc" ? (a.year - b.year) : (b.year - a.year));
     return filtered;
   }
+  // Confetti launcher (from element position)
+function launchConfettiFrom(el) {
+  if (!window.confetti || !el) return;
+  const rect = el.getBoundingClientRect();
+  const cx = rect.left + rect.width / 2;
+  const cy = rect.top + rect.height / 2;
+  const x = cx / window.innerWidth;
+  const y = cy / window.innerHeight;
+
+  const base = {
+    particleCount: 100,
+    spread: 70,
+    startVelocity: 45,
+    gravity: 0.9,
+    ticks: 200,
+    scalar: 0.9,
+    origin: { x, y }
+  };
+
+  confetti({ ...base, angle: 60, colors: ["#ffd76a","#f7b500","#c88700","#ffffff"] });
+  confetti({ ...base, angle: 120, colors: ["#ffd76a","#f7b500","#c88700","#ffffff"] });
+}
+
   function renderGrid() {
     if (!grid) return;
     grid.innerHTML = "";
@@ -174,7 +197,13 @@
         <div class="year">${s.year ?? "—"}</div>
         <div class="small">${s.champion ? "Champion: " + s.champion : ""}</div>
       `;
-      btn.addEventListener("click", () => openModal(s));
+      btn.addEventListener("click", (e) => {
+  if (s.year === 2024) {
+    launchConfettiFrom(e.currentTarget); // confetti only for latest champ
+  }
+  openModal(s);
+});
+
       grid.appendChild(btn);
     }
   }
