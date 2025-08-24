@@ -277,7 +277,20 @@ function launchConfettiFrom(el) {
         podiumEl.appendChild(li);
       }
     }
-    if (notesEl) notesEl.textContent = season.note || "";
+    let notes = season.note || "";
+
+// Add highest ADP if available
+if (season.highestADP) {
+  notes += (notes ? "\n" : "") + `Highest ADP: ${season.highestADP}`;
+}
+
+// Add highest non-QB scorer if available
+if (season.highestNonQB) {
+  notes += (notes ? "\n" : "") + `Top Non-QB: ${season.highestNonQB}`;
+}
+
+if (notesEl) notesEl.textContent = notes;
+
 
     modal?.setAttribute("aria-hidden", "false");
     modal?.querySelector(".modal-close")?.focus();
