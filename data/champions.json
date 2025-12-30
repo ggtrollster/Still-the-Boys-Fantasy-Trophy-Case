@@ -40,9 +40,9 @@
     { "year":2024, "first":"Shabaz","second":"Flo","third":"Jwoo",
       "adp1":{"player":"Christian McCaffrey","pos":"RB","team":"SF"},
       "nonQBTop":{"player":"Ja'Marr Chase","pos":"WR","team":"CIN"} 
-    },
-    {
-  "year": 2025,
+},
+{
+   "year": 2025,
   "first": "Jpak",
   "second": "Jwoo",
   "third": "Matt",
@@ -50,6 +50,7 @@
   "adp1": { "player": "Ja'Marr Chase", "pos": "WR", "team": "CIN" },
   "nonQBTop": { "player": "Christian McCaffrey", "pos": "RB", "team": "SF" }
 }
+
 
 
   
