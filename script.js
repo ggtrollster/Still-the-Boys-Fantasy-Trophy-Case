@@ -72,7 +72,7 @@
     }
   }
 
-  // ---------- Confetti (only fires for 2024) ----------
+  // ---------- Confetti (only fires for 2025) ----------
   function launchConfettiFrom(el) {
     if (!window.confetti || !el) return;
     const r = el.getBoundingClientRect();
@@ -117,7 +117,7 @@
         <div class="small">Champion: ${s.first}</div>
       `;
       btn.addEventListener("click", (e) => {
-        if (s.year === 2024) launchConfettiFrom(e.currentTarget);
+        if (s.year === 2025) launchConfettiFrom(e.currentTarget);
         openModal(s);
       });
       grid.appendChild(btn);
