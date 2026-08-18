@@ -154,7 +154,7 @@
           <line x1="62" y1="98" x2="122" y2="98" stroke="#6b4a12" stroke-width="2" opacity=".4"/>
           <line x1="62" y1="112" x2="130" y2="112" stroke="#6b4a12" stroke-width="2" opacity=".3"/>
         </g></svg>`;
-      case "romanTwo": // 2024 — back-to-back championship
+      case "romantwo": // 2024 — back-to-back championship
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g>
           <polygon points="100,18 103,26 112,27 105,33 108,42 100,37 92,42 95,33 88,27 97,26" fill="url(#${gid})" ${STROKE}/>
           <g ${STROKE}>
@@ -169,7 +169,7 @@
           <rect x="54" y="152" width="92" height="14" rx="2" fill="#3a2a16" stroke="none"/>
           ${shine(72,80,8,26)}
         </g></svg>`;
-      case "lombardiStyle": // 2018 — football mounted on a tripod stand
+      case "lombardistyle": // 2018 — football mounted on a tripod stand
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g>
           <g stroke="#3a2a16" stroke-width="8" stroke-linecap="round">
             <line x1="100" y1="146" x2="58" y2="180"/>
@@ -187,7 +187,7 @@
           </g>
           ${shine(88,58,8,16)}
         </g></svg>`;
-      case "smudgedClassic": // 2015 — the classic cup, with its infamous smudge
+      case "smudgedclassic": // 2015 — the classic cup, with its infamous smudge
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g ${STROKE}>
           <rect x="72" y="152" width="56" height="9" rx="2" fill="#3a2a16" stroke="none"/>
           <rect x="62" y="161" width="76" height="11" rx="2" fill="#2a1d10" stroke="none"/>
@@ -203,7 +203,7 @@
           <ellipse cx="118" cy="88" rx="7" ry="5" fill="rgba(60,45,25,0.3)"/>
           <ellipse cx="104" cy="104" rx="5" ry="4" fill="rgba(60,45,25,0.25)"/>
         </g></svg>`;
-      case "worldCupStyle": // 2014 — spiraling risers holding up a globe
+      case "worldcupstyle": // 2014 — spiraling risers holding up a globe
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g>
           <rect x="76" y="158" width="48" height="12" rx="2" fill="#3a2a16"/>
           <g fill="none" stroke="url(#${gid})" stroke-linecap="round">
