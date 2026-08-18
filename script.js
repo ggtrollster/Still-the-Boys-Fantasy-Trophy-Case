@@ -85,7 +85,6 @@
           <circle cx="62" cy="60" r="4" fill="#7a2f2a"/>
           <circle cx="100" cy="52" r="5" fill="#7a2f2a"/>
           <circle cx="138" cy="60" r="4" fill="#7a2f2a"/>
-          ${shine(88,80,14,8)}
         </g></svg>`;
       case "football":
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g transform="rotate(-20 100 80)">
@@ -103,7 +102,6 @@
           <ellipse cx="100" cy="112" rx="46" ry="30" fill="none" stroke="url(#${gid})" stroke-width="14"/>
           <path d="M76,68 L100,40 L124,68 L112,84 L88,84 Z" fill="url(#${gid})" ${STROKE}/>
           <circle cx="100" cy="62" r="8" fill="#7a2f2a" stroke="#6b4a12" stroke-width="1.5"/>
-          ${shine(84,104,10,6)}
         </g></svg>`;
       case "rocket":
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g>
@@ -114,7 +112,6 @@
             <circle cx="100" cy="76" r="10" fill="#1d1f2a" stroke="url(#${gid})" stroke-width="3"/>
           </g>
           <path d="M92,124 L100,148 L108,124 Z" fill="rgba(255,140,60,0.75)"/>
-          ${shine(90,58,10,14)}
         </g></svg>`;
       case "medal":
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g>
@@ -167,7 +164,6 @@
           </g>
           <rect x="62" y="142" width="76" height="10" fill="#2a1d10" stroke="none"/>
           <rect x="54" y="152" width="92" height="14" rx="2" fill="#3a2a16" stroke="none"/>
-          ${shine(72,80,8,26)}
         </g></svg>`;
       case "lombardistyle": // 2018 — football mounted on a tripod stand
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g>
@@ -185,7 +181,6 @@
             <line x1="87" y1="80" x2="113" y2="80"/>
             <line x1="88" y1="90" x2="112" y2="90"/>
           </g>
-          ${shine(88,58,8,16)}
         </g></svg>`;
       case "smudgedclassic": // 2015 — the classic cup, with its infamous smudge
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g ${STROKE}>
@@ -196,7 +191,6 @@
           <path d="M142,68 a24,24 0 0 0 33,-19 v-10 h-24 v10 a9,9 0 0 1 -9,9 z" fill="url(#${gid})"/>
           <rect x="88" y="136" width="24" height="9" fill="url(#${gid})" stroke="none"/>
           <line x1="82" y1="80" x2="118" y2="80" stroke="#7a5518" stroke-width="1.5" opacity=".5"/>
-          ${shine(84,75,10,16)}
         </g>
         <g stroke="none">
           <ellipse cx="112" cy="95" rx="13" ry="9" fill="rgba(60,45,25,0.4)" transform="rotate(18 112 95)"/>
@@ -213,7 +207,6 @@
           <circle cx="100" cy="38" r="22" fill="url(#${gid})" ${STROKE}/>
           <ellipse cx="100" cy="38" rx="22" ry="8" fill="none" stroke="#6b4a12" stroke-width="1.2" opacity=".5"/>
           <line x1="100" y1="16" x2="100" y2="60" stroke="#6b4a12" stroke-width="1.2" opacity=".5"/>
-          ${shine(90,32,8,10)}
         </g></svg>`;
       case "triangle": // 2012 — faceted triangle trophy
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g>
@@ -221,7 +214,6 @@
           <polygon points="100,34 152,150 48,150" fill="url(#${gid})" ${STROKE}/>
           <polygon points="100,58 132,150 68,150" fill="rgba(255,255,255,0.14)"/>
           <polygon points="100,58 100,150 68,150" fill="rgba(0,0,0,0.08)"/>
-          ${shine(82,80,10,20)}
         </g></svg>`;
       default: // classic cup
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g ${STROKE}>
@@ -232,7 +224,6 @@
           <path d="M142,68 a24,24 0 0 0 33,-19 v-10 h-24 v10 a9,9 0 0 1 -9,9 z" fill="url(#${gid})"/>
           <rect x="88" y="136" width="24" height="9" fill="url(#${gid})" stroke="none"/>
           <line x1="82" y1="80" x2="118" y2="80" stroke="#7a5518" stroke-width="1.5" opacity=".5"/>
-          ${shine(84,75,10,16)}
         </g></svg>`;
     }
   }
