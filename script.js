@@ -43,7 +43,7 @@
     `;
   }
   function goldStops(){ return [{off:0,color:"#ffd76a"},{off:50,color:"#f7b500"},{off:100,color:"#c88700"}]; }
-  function shine(cx, ry, rx, ryy){ return `<ellipse cx="${cx}" cy="${ry}" rx="${rx}" ry="${ryy}" fill="rgba(255,255,255,0.32)" />`; }
+  function shine(cx, ry, rx, ryy){ return `<ellipse cx="${cx}" cy="${ry}" rx="${rx}" ry="${ryy}" fill="rgba(255,255,255,0.32)" stroke="none" />`; }
   const STROKE = `stroke="#6b4a12" stroke-width="2" stroke-linejoin="round"`;
 
   function svgForStyle(style, colorHex, key) {
