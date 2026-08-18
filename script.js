@@ -168,13 +168,14 @@
     }
   }
 
-  // ---------- Confetti (only fires for 2024) ----------
+ // ---------- Confetti (fires for the most recent season) ----------
+  const latestYear = seasons.length ? Math.max(...seasons.map(s => s.year)) : null;
   function launchConfettiFrom(el) {
     if (!window.confetti || !el) return;
     const r = el.getBoundingClientRect();
     const x = (r.left + r.width/2) / window.innerWidth;
     const y = (r.top + r.height/2) / window.innerHeight;
-    const base = { particleCount: 100, spread: 70, startVelocity: 45, gravity: 0.9, ticks: 200, scalar: 0.9, origin: {x,y} };
+    const base = { particleCount: 100, spread: 70, startVelocity: 45, gravity: 0.7, ticks: 200, scalar: 0.9, origin: {x,y} };
     confetti({ ...base, angle: 60, colors: ["#ffd76a","#f7b500","#c88700","#ffffff"] });
     confetti({ ...base, angle: 120, colors: ["#ffd76a","#f7b500","#c88700","#ffffff"] });
   }
@@ -213,7 +214,7 @@
         <div class="small">Champion: ${s.first}</div>
       `;
       btn.addEventListener("click", (e) => {
-        if (s.year === 2024) launchConfettiFrom(e.currentTarget);
+        if (s.year === latestYear) launchConfettiFrom(e.currentTarget);
         openModal(s);
       });
       grid.appendChild(btn);
