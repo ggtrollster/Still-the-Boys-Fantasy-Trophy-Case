@@ -154,6 +154,75 @@
           <line x1="62" y1="98" x2="122" y2="98" stroke="#6b4a12" stroke-width="2" opacity=".4"/>
           <line x1="62" y1="112" x2="130" y2="112" stroke="#6b4a12" stroke-width="2" opacity=".3"/>
         </g></svg>`;
+      case "romanTwo": // 2024 — back-to-back championship
+        return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g>
+          <polygon points="100,18 103,26 112,27 105,33 108,42 100,37 92,42 95,33 88,27 97,26" fill="url(#${gid})" ${STROKE}/>
+          <g ${STROKE}>
+            <rect x="72" y="58" width="14" height="82" fill="url(#${gid})"/>
+            <rect x="62" y="48" width="34" height="10" rx="2" fill="url(#${gid})"/>
+            <rect x="62" y="140" width="34" height="10" rx="2" fill="url(#${gid})"/>
+            <rect x="114" y="58" width="14" height="82" fill="url(#${gid})"/>
+            <rect x="104" y="48" width="34" height="10" rx="2" fill="url(#${gid})"/>
+            <rect x="104" y="140" width="34" height="10" rx="2" fill="url(#${gid})"/>
+          </g>
+          <rect x="62" y="142" width="76" height="10" fill="#2a1d10" stroke="none"/>
+          <rect x="54" y="152" width="92" height="14" rx="2" fill="#3a2a16" stroke="none"/>
+          ${shine(72,80,8,26)}
+        </g></svg>`;
+      case "lombardiStyle": // 2018 — football mounted on a tripod stand
+        return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g>
+          <g stroke="#3a2a16" stroke-width="8" stroke-linecap="round">
+            <line x1="100" y1="146" x2="58" y2="180"/>
+            <line x1="100" y1="146" x2="142" y2="180"/>
+            <line x1="100" y1="146" x2="100" y2="182"/>
+          </g>
+          <rect x="93" y="108" width="14" height="40" fill="url(#${gid})" ${STROKE}/>
+          <ellipse cx="100" cy="76" rx="27" ry="44" fill="url(#${gid})" stroke="#4a2c10" stroke-width="2.5"/>
+          <g stroke="#4a2c10" stroke-width="2" stroke-linecap="round">
+            <line x1="100" y1="52" x2="100" y2="100"/>
+            <line x1="90" y1="60" x2="110" y2="60"/>
+            <line x1="88" y1="70" x2="112" y2="70"/>
+            <line x1="87" y1="80" x2="113" y2="80"/>
+            <line x1="88" y1="90" x2="112" y2="90"/>
+          </g>
+          ${shine(88,58,8,16)}
+        </g></svg>`;
+      case "smudgedClassic": // 2015 — the classic cup, with its infamous smudge
+        return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g ${STROKE}>
+          <rect x="72" y="152" width="56" height="9" rx="2" fill="#3a2a16" stroke="none"/>
+          <rect x="62" y="161" width="76" height="11" rx="2" fill="#2a1d10" stroke="none"/>
+          <path d="M100,136 c-17,0 -24,-9 -24,-27 V68 h48 v41 c0,18 -7,27 -24,27 z" fill="url(#${gid})"/>
+          <path d="M58,68 a24,24 0 0 1 -33,-19 v-10 h24 v10 a9,9 0 0 0 9,9 z" fill="url(#${gid})"/>
+          <path d="M142,68 a24,24 0 0 0 33,-19 v-10 h-24 v10 a9,9 0 0 1 -9,9 z" fill="url(#${gid})"/>
+          <rect x="88" y="136" width="24" height="9" fill="url(#${gid})" stroke="none"/>
+          <line x1="82" y1="80" x2="118" y2="80" stroke="#7a5518" stroke-width="1.5" opacity=".5"/>
+          ${shine(84,75,10,16)}
+        </g>
+        <g stroke="none">
+          <ellipse cx="112" cy="95" rx="13" ry="9" fill="rgba(60,45,25,0.4)" transform="rotate(18 112 95)"/>
+          <ellipse cx="118" cy="88" rx="7" ry="5" fill="rgba(60,45,25,0.3)"/>
+          <ellipse cx="104" cy="104" rx="5" ry="4" fill="rgba(60,45,25,0.25)"/>
+        </g></svg>`;
+      case "worldCupStyle": // 2014 — spiraling risers holding up a globe
+        return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g>
+          <rect x="76" y="158" width="48" height="12" rx="2" fill="#3a2a16"/>
+          <g fill="none" stroke="url(#${gid})" stroke-linecap="round">
+            <path d="M100,158 C70,140 130,120 90,95 C60,75 120,60 100,44" stroke-width="12"/>
+            <path d="M100,158 C130,140 70,120 110,95 C140,75 80,60 100,44" stroke-width="12"/>
+          </g>
+          <circle cx="100" cy="38" r="22" fill="url(#${gid})" ${STROKE}/>
+          <ellipse cx="100" cy="38" rx="22" ry="8" fill="none" stroke="#6b4a12" stroke-width="1.2" opacity=".5"/>
+          <line x1="100" y1="16" x2="100" y2="60" stroke="#6b4a12" stroke-width="1.2" opacity=".5"/>
+          ${shine(90,32,8,10)}
+        </g></svg>`;
+      case "triangle": // 2012 — faceted triangle trophy
+        return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g>
+          <rect x="66" y="152" width="68" height="14" rx="2" fill="#3a2a16"/>
+          <polygon points="100,34 152,150 48,150" fill="url(#${gid})" ${STROKE}/>
+          <polygon points="100,58 132,150 68,150" fill="rgba(255,255,255,0.14)"/>
+          <polygon points="100,58 100,150 68,150" fill="rgba(0,0,0,0.08)"/>
+          ${shine(82,80,10,20)}
+        </g></svg>`;
       default: // classic cup
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g ${STROKE}>
           <rect x="72" y="152" width="56" height="9" rx="2" fill="#3a2a16" stroke="none"/>
@@ -168,14 +237,14 @@
     }
   }
 
- // ---------- Confetti (fires for the most recent season) ----------
+  // ---------- Confetti (fires for the most recent season) ----------
   const latestYear = seasons.length ? Math.max(...seasons.map(s => s.year)) : null;
   function launchConfettiFrom(el) {
     if (!window.confetti || !el) return;
     const r = el.getBoundingClientRect();
     const x = (r.left + r.width/2) / window.innerWidth;
     const y = (r.top + r.height/2) / window.innerHeight;
-    const base = { particleCount: 100, spread: 70, startVelocity: 45, gravity: 0.7, ticks: 200, scalar: 0.9, origin: {x,y} };
+    const base = { particleCount: 100, spread: 70, startVelocity: 45, gravity: 0.9, ticks: 200, scalar: 0.9, origin: {x,y} };
     confetti({ ...base, angle: 60, colors: ["#ffd76a","#f7b500","#c88700","#ffffff"] });
     confetti({ ...base, angle: 120, colors: ["#ffd76a","#f7b500","#c88700","#ffffff"] });
   }
