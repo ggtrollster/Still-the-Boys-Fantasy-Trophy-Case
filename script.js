@@ -197,16 +197,24 @@
           <ellipse cx="118" cy="88" rx="7" ry="5" fill="rgba(60,45,25,0.3)"/>
           <ellipse cx="104" cy="104" rx="5" ry="4" fill="rgba(60,45,25,0.25)"/>
         </g></svg>`;
-      case "worldcupstyle": // 2014 — spiraling risers holding up a globe
+    case "worldcupstyle": // 2014 — spiraling risers holding up a globe
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g>
           <rect x="76" y="158" width="48" height="12" rx="2" fill="#3a2a16"/>
           <g fill="none" stroke="url(#${gid})" stroke-linecap="round">
             <path d="M100,158 C70,140 130,120 90,95 C60,75 120,60 100,44" stroke-width="12"/>
             <path d="M100,158 C130,140 70,120 110,95 C140,75 80,60 100,44" stroke-width="12"/>
           </g>
-          <circle cx="100" cy="38" r="22" fill="url(#${gid})" ${STROKE}/>
-          <ellipse cx="100" cy="38" rx="22" ry="8" fill="none" stroke="#6b4a12" stroke-width="1.2" opacity=".5"/>
-          <line x1="100" y1="16" x2="100" y2="60" stroke="#6b4a12" stroke-width="1.2" opacity=".5"/>
+          <g transform="rotate(-15 100 38)">
+            <ellipse cx="100" cy="38" rx="24" ry="14" fill="url(#${gid})" stroke="#4a2c10" stroke-width="2"/>
+            <g stroke="#4a2c10" stroke-width="1.6" stroke-linecap="round">
+              <line x1="87" y1="38" x2="113" y2="38"/>
+              <line x1="94" y1="34" x2="94" y2="42"/>
+              <line x1="99" y1="34" x2="99" y2="42"/>
+              <line x1="104" y1="34" x2="104" y2="42"/>
+              <line x1="109" y1="34" x2="109" y2="42"/>
+            </g>
+          </g>
+          ${shine(90,32,8,10)}
         </g></svg>`;
       case "triangle": // 2012 — faceted triangle trophy
         return `<svg class="trophy-svg" viewBox="0 0 200 200">${g}<g>
